@@ -1,8 +1,8 @@
 name: flutter_getuuid
-description: A new Flutter plugin.
+description: Support ios and android device information acquisition such as UUID
 version: 0.0.1
-author:
-homepage:
+author: aji <867596152@qq.com>
+homepage: https://github.com/wozhizhizhi/flutter_getuuid.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

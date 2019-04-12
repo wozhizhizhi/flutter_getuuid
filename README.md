@@ -1,14 +1,28 @@
 # flutter_getuuid
 
-A new Flutter plugin.
+一款flutter插件用于获取android和iOS的设备信息
 
-## Getting Started
+## 使用需知
+如果想用github上最新版本:
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+```yaml
+dependencies:
+  flutter_getuuid:
+    git:
+      url: https://github.com/wozhizhizhi/flutter_getuuid.git
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## 如何使用
+
+```
+static netFetch() async {
+    /// 获取手机的UUID
+    uuid = await FlutterGetuuid.platformUid;
+    /// 获取手机的型号如“iPhone7”
+    phoneMark = await FlutterGetuuid.platformDeviceModle;
+    /// 获取项目的版本号
+    version = await FlutterGetuuid.platformVersionCode;
+    /// 获取系统SDK版本
+    systemMark = await FlutterGetuuid.platformSystemMark;
+}
+```
