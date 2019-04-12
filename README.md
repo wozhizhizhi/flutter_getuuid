@@ -5,7 +5,7 @@
 ## 使用需知
 ## 引入
 
-在你的 `pubspec.yaml` 文件中添加如下依赖:
+在你的 `pubspec.yaml` 文件中添加如下依赖(目前还没发布到pub请使用下面的方法集成):
 
 ```yaml
 dependencies:
