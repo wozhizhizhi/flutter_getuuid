@@ -7,8 +7,22 @@
 
 ```yaml
 dependencies:
-  fluwx:
+  flutter_getuuid:
     git:
       url: https://github.com/wozhizhizhi/flutter_getuuid.git
 ```
 
+## 如何使用
+
+```
+static netFetch() async {
+    /// 获取手机的UUID
+    uuid = await FlutterGetuuid.platformUid;
+    /// 获取手机的型号如“iPhone7”
+    phoneMark = await FlutterGetuuid.platformDeviceModle;
+    /// 获取项目的版本号
+    version = await FlutterGetuuid.platformVersionCode;
+    /// 获取系统SDK版本
+    systemMark = await FlutterGetuuid.platformSystemMark;
+}
+```
