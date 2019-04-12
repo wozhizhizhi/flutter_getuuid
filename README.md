@@ -1,8 +1,8 @@
 # flutter_getuuid
 
-A new Flutter plugin.
+用于获取android和iOS的设备信息
 
-## Getting Started
+##  ru  
 
 This project is a starting point for a Flutter
 [plug-in package](https://flutter.io/developing-packages/),
