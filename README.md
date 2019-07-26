@@ -3,7 +3,7 @@
 一款flutter插件用于获取android和iOS的设备信息
 
 ## 引入
-####注意 ios环境需要用xcode打开项目然后在
+####注意 ios环境需要用xcode打开项目然后
 
 1. 找到Podfile文件在 "target 'Runner' do" 下添加 pod 'SAMKeychain'
 2. 然后打开命令行工具进入项目执行pod install命令即可
