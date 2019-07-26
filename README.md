@@ -3,7 +3,17 @@
 一款flutter插件用于获取android和iOS的设备信息
 
 ## 引入
+####注意 ios环境需要用xcode打开项目然后在
 
+1. 找到Podfile文件在 "target 'Runner' do" 下添加 pod 'SAMKeychain'
+2. 然后打开命令行工具进入项目执行pod install命令即可
+- 添加位置
+```yaml
+target 'Runner' do
+  pod 'SAMKeychain'
+  Prepare symlinks folder. We use symlinks to avoid having Podfile.lock
+  referring to absolute paths on developers' machines.
+```
 在你的 `pubspec.yaml` 文件中添加如下依赖(目前还没发布到pub请使用下面的方法集成):
 
 ```yaml
