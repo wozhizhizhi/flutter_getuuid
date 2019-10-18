@@ -14,11 +14,11 @@ target 'Runner' do
   Prepare symlinks folder. We use symlinks to avoid having Podfile.lock
   referring to absolute paths on developers' machines.
 ```
-在你的 `pubspec.yaml` 文件中添加如下依赖(目前还没发布到pub请使用下面的方法集成):
+在你的 `pubspec.yaml` 文件中添加如下依赖:
 
 ```yaml
 dependencies:
-  flutter_getuuid: ^${latestVersion}
+  flutter_getuuid: ^0.0.1
 ```
 
 如果想用github上最新版本:
