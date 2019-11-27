@@ -29,7 +29,7 @@ dependencies:
     git:
       url: https://github.com/wozhizhizhi/flutter_getuuid.git
 ```
-1.增加获取获取项目的vesionname
+1.增加获取获取项目的vesionname，如需使用这种方法请使用git集成方式，pub暂时还没上传上去
 ## 如何使用
 ```
 static netFetch() async {
