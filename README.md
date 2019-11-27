@@ -29,18 +29,19 @@ dependencies:
     git:
       url: https://github.com/wozhizhizhi/flutter_getuuid.git
 ```
-
+1.增加获取获取项目的vesionname
 ## 如何使用
-
 ```
 static netFetch() async {
     /// 获取手机的UUID
     uuid = await FlutterGetuuid.platformUid;
     /// 获取手机的型号如“iPhone7”
     phoneMark = await FlutterGetuuid.platformDeviceModle;
-    /// 获取项目的版本号
+    /// 获取项目的vesion-code
     version = await FlutterGetuuid.platformVersionCode;
     /// 获取系统SDK版本
     systemMark = await FlutterGetuuid.platformSystemMark;
+    /// 获取项目的vesion-name
+    version = await FlutterGetuuid.platformVersionName;
 }
 ```
