@@ -44,6 +44,9 @@ public class FlutterGetuuidPlugin implements MethodCallHandler {
     else if (call.method.equals("getCurrentDeviceModel")){
       result.success(getCurrentDeviceModel());
     }
+    else if (call.method.equals("getVersionName")){
+      result.success(getVersionName(context));
+    }
     else {
       result.notImplemented();
     }
@@ -81,6 +84,21 @@ public class FlutterGetuuidPlugin implements MethodCallHandler {
       e.printStackTrace();
     }
     return versionCode+"";
+  }
+
+  // 获取版本Name
+  public String getVersionName(Context context)
+  {
+    String versionName="";
+    try
+    {
+      versionName =  context.getPackageManager().getPackageInfo(context.getPackageName() , PackageManager.GET_CONFIGURATIONS).versionName;
+    }
+    catch (PackageManager.NameNotFoundException e)
+    {
+      e.printStackTrace();
+    }
+    return versionName;
   }
 
   // 系统使用的SDK版本

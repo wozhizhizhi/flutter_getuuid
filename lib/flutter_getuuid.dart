@@ -31,4 +31,9 @@ class FlutterGetuuid {
     return systemMark;
   }
 
+  static Future<String> get platformVersionName async {
+    final String versionName = await _channel.invokeMethod('getVersionName');
+    return versionName;
+  }
+
 }

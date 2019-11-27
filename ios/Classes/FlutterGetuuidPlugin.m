@@ -25,6 +25,9 @@
   else if([@"getVersionCode" isEqualToString:call.method]){
       result([@"" stringByAppendingString:[self getVersionCode]]);
   }
+  else if([@"getVersionName" isEqualToString:call.method]){
+    result([@"" stringByAppendingString:[self getVersionName]]);
+  }
   else{
     result(FlutterMethodNotImplemented);
   }
@@ -143,5 +146,13 @@
     // 获取App的版本号
     NSString *appVersion = [infoDic objectForKey:@"CFBundleVersion"];
     return appVersion;
+}
+
+// 获取app版本名称
+- (NSString *)getVersionName {
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    // 获取App的版本号
+    NSString *appVersionName = [infoDic objectForKey:@"CFBundleShortVersionString"];
+    return appVersionName;
 }
 @end
