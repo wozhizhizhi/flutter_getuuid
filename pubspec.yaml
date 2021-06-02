@@ -1,11 +1,11 @@
 name: flutter_getuuid
 description: Support ios and android device information acquisition such as UUID
-version: 0.0.1
+version: 0.0.2
 author: aji <867596152@qq.com>
 homepage: https://github.com/wozhizhizhi/flutter_getuuid.git
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
